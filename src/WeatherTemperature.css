@@ -1,0 +1,25 @@
+.units {
+  font-size: small;
+  position: relative;
+  bottom: 11px;
+}
+
+.fahrenheit {
+    text-decoration: none;
+}
+
+.celsius {
+    text-decoration: none;
+}
+
+.fahrenheit:hover {
+  cursor: pointer;
+  color: navy;
+  text-decoration: none;
+}
+
+.celsius:hover {
+  cursor: pointer;
+  color: navy;
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.container {
+  margin: 30px auto;
+  border-radius: 20px;
+  max-height: 900px;
+  max-width: 575px;
+  min-height: 500px;
+  border: none;
+ background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 1px;
+}

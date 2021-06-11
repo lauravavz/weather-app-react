@@ -1,0 +1,14 @@
+.row {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.col {
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  line-height: 2.1;
+  color: #fff;
+  padding: 0;
+  margin: 10px auto 20px;
+}
