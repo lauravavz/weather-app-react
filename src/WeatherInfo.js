@@ -47,7 +47,6 @@ return (
    <h3 id="date"><FormattedDate date={weatherData.date} /></h3>
     <h1 id="current-city">{weatherData.city}</h1>
     <WeatherTemperature celsius={weatherData.temperature}/>
-    
     <h3 id="weather-condition" className="text-capitalize">{weatherData.description}
     </h3>
     <img src={weatherData.icon} className="main-icon" alt="weather icon"/>
