@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function search() {
-     let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c9b707c9a800bc82a565bfc394bcf972&units=metric`;
+     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c9b707c9a800bc82a565bfc394bcf972&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   
   }
