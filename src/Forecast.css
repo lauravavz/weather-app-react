@@ -1,6 +1,6 @@
 .row {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -11,4 +11,9 @@
   color: #fff;
   padding: 0;
   margin: 10px auto 20px;
+}
+
+.forecast-icon {
+  text-align: center;
+  font-size: 2px;
 }
