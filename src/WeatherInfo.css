@@ -80,7 +80,7 @@ h3 {
   text-transform: capitalize;
 }
 
-.main-icon {
+.main-icon canvas{
   display: block;
   text-align: center;
   margin: 5px auto 10px;

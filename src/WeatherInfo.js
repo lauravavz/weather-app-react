@@ -4,7 +4,7 @@ import "./WeatherInfo.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import Forecast from "./Forecast";
-import WeatherForecastDay from "./WeatherForecastDay";
+import WeatherIcon from "./WeatherIcon";
 
 
 export default function WeatherInfo(props) {
@@ -34,7 +34,7 @@ export default function WeatherInfo(props) {
     description: response.data.weather[0].description,
     city: response.data.name,
     date: new Date(response.data.dt * 1000),
-    icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+    icon: response.data.weather[0].icon,
   });
 }
 
@@ -52,7 +52,9 @@ return (
     <WeatherTemperature celsius={weatherData.temperature}/>
     <h3 id="weather-condition" className="text-capitalize">{weatherData.description}
     </h3>
-    <img src={weatherData.icon} className="main-icon" alt="weather icon"/>
+    <div className="main-icon">
+    <WeatherIcon code={weatherData.icon}/>
+    </div>
     <Forecast coordinates={weatherData.coordinates} icon={weatherData.icon}/>
   </div>
   
