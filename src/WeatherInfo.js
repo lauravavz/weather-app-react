@@ -3,6 +3,7 @@ import axios from "axios";
 import "./WeatherInfo.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import Forecast from "./Forecast";
 
 
 export default function WeatherInfo(props) {
@@ -27,6 +28,7 @@ export default function WeatherInfo(props) {
   function handleResponse(response) {
   setWeatherData({
     ready: true,
+    coordinates: response.Reactdata.coord,
     temperature: response.data.main.temp,
     description: response.data.weather[0].description,
     city: response.data.name,
@@ -50,7 +52,9 @@ return (
     <h3 id="weather-condition" className="text-capitalize">{weatherData.description}
     </h3>
     <img src={weatherData.icon} className="main-icon" alt="weather icon"/>
+    <Forecast coordinates={weatherData.coordinates}/>
   </div>
+  
   );
 }
 else {
