@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Forecast.css";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
@@ -20,6 +20,10 @@ function handleResponse(response) {
 
     axios.get(apiUrl).then(handleResponse);
   }
+useEffect(() => {
+setLoaded(false);
+  }, [props.coordinates]);
+
 
   if (loaded) {
     return (
