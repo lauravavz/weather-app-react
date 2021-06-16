@@ -44,7 +44,6 @@ return (
     <form id="search-form" onSubmit={handleSubmit}>
             <input type="search" placeholder=" 🔍 Search city" id="city-input" autoComplete="off" onChange={handleCityChange}/>
             <input type="submit" id="search-button" value="Search" />
-            <button id="current-temperature-button">Current</button>
         </form>
 
    <h3 id="date"><FormattedDate date={weatherData.date} /></h3>
@@ -53,7 +52,7 @@ return (
     <h3 id="weather-condition" className="text-capitalize">{weatherData.description}
     </h3>
     <div className="main-icon">
-    <WeatherIcon code={weatherData.icon}/>
+    <WeatherIcon code={weatherData.icon} />
     </div>
     <Forecast coordinates={weatherData.coordinates} icon={weatherData.icon}/>
   </div>

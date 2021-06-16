@@ -1,6 +1,6 @@
 form {
   text-align: center;
-  margin: 30px auto 30px;
+  margin: 20px auto 21px;
   max-width: 500px;
 }
 
@@ -20,30 +20,13 @@ form {
   color: #b4aee8;
   font-family: "Lexend", sans-serif;
   transition: all 200ms ease-in-out;
-  margin: 5px 20px;
-  padding: 5px 15px;
+  margin: 5px 15px;
+  padding: 5px 10px;
   box-shadow: 4px 4px 10px rgba(70, 68, 68, 0.3);
 }
 
 #search-button:hover {
-  background-color: #b4aee8;
-  color: #fff;
-  cursor: pointer;
-}
-
-#current-temperature-button {
-  border-radius: 21px;
-  border: 1px #b4aee8;
-  background-color: #fff;
-  color: #b4aee8;
-  font-family: "Lexend", sans-serif;
-  transition: all 200ms ease-in-out;
-  padding: 5px 15px;
-  box-shadow: 4px 4px 10px rgba(70, 68, 68, 0.3);
-}
-
-#current-temperature-button:hover {
-  background-color: #b4aee8;
+  background-color: #ff1a47;
   color: #fff;
   cursor: pointer;
 }
@@ -55,11 +38,11 @@ h2 {
   display: block;
   margin: 0 auto;
   line-height: 1;
-  font-size: 34px;
+  font-size: 25px;
   color: #fff;
   padding: 0px;
   font-family: "Lexend", sans-serif;
-  margin: 10px;
+  margin: 5px;
 }
 
 h3 {
@@ -75,15 +58,16 @@ h3 {
 }
 
 #current-city {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bolder;
   text-transform: capitalize;
 }
 
-.main-icon canvas{
+.main-icon canvas {
   display: block;
   text-align: center;
-  margin: 5px auto 10px;
+  margin: 15px auto 20px;
   color: #fff;
-  font-size: 55px;
+  position: relative;
+  top: 10px;
 }
